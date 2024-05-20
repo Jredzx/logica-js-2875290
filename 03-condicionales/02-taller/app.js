@@ -1,11 +1,9 @@
 console.log ("Ejecutando")
-// Pedir la altura de la persona al usuario
-let altura = prompt("Por favor, ingrese su altura en cm:");
 
-// Convertir la entrada a un número
-altura = Number(altura);
+//let altura = prompt("Por favor, ingrese su altura en cm:");
 
-// Verificar la altura y mostrar el mensaje correspondiente
+/*altura = Number(altura);
+
 if (altura <= 150) {
     alert("Persona de altura baja");
 } else if (altura >= 151 && altura <= 170) {
@@ -72,45 +70,37 @@ function seleccionarJugador() {
 }
 
 // Llamar a la función para ejecutar el código
-seleccionarJugador();
+seleccionarJugador();*/
 
-
-function calcularPagoEscritorios() {
-    // Pedir el número de escritorios comprados
-    let numEscritorios = prompt("Por favor, ingrese el número de escritorios que desea comprar:");
-    numEscritorios = Number(numEscritorios);
-
-    // Pedir el precio por escritorio
-    let precioPorEscritorio = prompt("Por favor, ingrese el precio por escritorio:");
-    precioPorEscritorio = Number(precioPorEscritorio);
-
-    // Validar que las entradas sean números válidos
-    if (isNaN(numEscritorios) || isNaN(precioPorEscritorio) || numEscritorios <= 0 || precioPorEscritorio <= 0) {
-        alert("Por favor, ingrese valores numéricos válidos y mayores a cero para la cantidad de escritorios y el precio.");
-        return; // Salir de la función si alguna entrada no es válida
-    }
-
-    // Calcular el descuento basado en la cantidad de escritorios
-    let descuento;
-    if (numEscritorios < 5) {
-        descuento = 0.10;
-    } else if (numEscritorios < 10) {
-        descuento = 0.20;
-    } else {
-        descuento = 0.40;
-    }
-
-    // Calcular el precio total y el monto del descuento
-    let precioTotal = numEscritorios * precioPorEscritorio;
-    let montoDescuento = precioTotal * descuento;
-    let precioFinal = precioTotal - montoDescuento;
-
-    // Mostrar los resultados
-    alert(`Precio total antes del descuento: $${precioTotal.toFixed(2)}`);
-    alert(`Monto del descuento: $${montoDescuento.toFixed(2)}`);
-    alert(`Precio final a pagar: $${precioFinal.toFixed(2)}`);
+// ejercicio 4
+let total = prompt ("Ingrese el total de escritorios comprados");
+let totalescritorios = (parseFloat(total)) *200;
+let precioescritorio = 200;
+let diez = (parseFloat(totalescritorios)) *0.1;
+let veinte = (parseFloat(totalescritorios)) *0.2;
+let cuarenta = (parseFloat(totalescritorios)) *0.4;
+let menos5 = (parseFloat(totalescritorios)) - (parseFloat(diez));
+let menos10 = (parseFloat(totalescritorios)) - (parseFloat(veinte));
+let mas10 = (parseFloat(totalescritorios)) - (parseFloat(cuarenta));
+if (total >= 5 & total <10){
+    console.log("El precio es " + totalescritorios + " Con el descuento el precio es " + menos10)
+}else if (total > 10){
+    console.log("El precio es " + totalescritorios + " Con el descuento el precio es " + mas10)
+}else {
+    console.log("El precio es " + totalescritorios + " Con el descuento el precio es " + menos5)
 }
 
-// Llamar a la función para ejecutar el código
-calcularPagoEscritorios();
-
+// ejercicio 5
+alert("Lista de frutas disponibles:\n- Manzana\n- Plátano\n- Naranja\n- Fresa\n- Piña");
+let frutaelegida = prompt("Ingrese el nombre de la fruta").toLowerCase();
+let cantidad = prompt("Ingrese la cantidad que desea comprar");
+let valores = {
+    "manzana": 1400,
+    "plátano": 1000,
+    "naranja": 1200,
+    "fresa": 500,
+    "piña": 2000,
+};
+let valorporunidad = valores[frutaelegida];
+let total1 = valorporunidad * cantidad;
+alert("Fruta: " + frutaelegida + "\nValor por unidad: $" + parseFloat(valorporunidad) + "\nValor total: $" + parseFloat(total));
