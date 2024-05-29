@@ -34,3 +34,28 @@ botonesColores[0].addEventListener ('click',pintarCaja)
 botonesColores[1].addEventListener ('click',pintarCaja)
 botonesColores[2].addEventListener ('click',pintarCaja)
 botonesColores[3].addEventListener ('click',pintarCaja)
+
+
+
+// Mover pelota
+//1. Variables
+const pelota = document.querySelector('#circulo');
+const btnMover = document.querySelector ('#btnMover');
+let e = 0;
+//2. Funciones
+function mover (){
+
+    if (e == 0)  {
+        pelota.style.marginLeft = '400px';
+        pelota.style.backgroundColor = 'yellow';
+        pelota.style.transitionDuration = '.5s';
+        e=1;
+    }else{
+        pelota.style.marginLeft = '0px';
+        pelota.style.backgroundColor = '#232323';
+        pelota.style.transitionDuration = '.5s';
+        e=0;
+    }
+}
+//3. Eventos
+btnMover.addEventListener('click', mover)
