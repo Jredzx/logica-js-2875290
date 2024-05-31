@@ -50,7 +50,7 @@ function mover (){
         pelota.style.backgroundColor = 'yellow';
         pelota.style.transitionDuration = '.5s';
         e=1;
-    }else{
+    }else{ 
         pelota.style.marginLeft = '0px';
         pelota.style.backgroundColor = '#232323';
         pelota.style.transitionDuration = '.5s';
@@ -59,3 +59,13 @@ function mover (){
 }
 //3. Eventos
 btnMover.addEventListener('click', mover)
+
+//Cambiar imagen
+const pantallaImg = document.querySelector('#miImagen')
+const btnCambiar = document.querySelector('#btnCambiar');
+let estado = 0;
+function cambiarImagen(){
+    pantallaImg.setAttribute('src','imagen2.jpg')
+}
+
+btnCambiar.addEventListener('click',cambiarImagen)
