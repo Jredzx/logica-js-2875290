@@ -4,19 +4,19 @@ var txt1 = document.getElementsByTagName("h1")[0];
 var txt2 = document.getElementsByTagName("p")[0];
 
 function cambio1 (){
-    img.setAttribute("src","img1.jpg")
+    img.setAttribute("src","modulo1.jpg")
     txt1.innerHTML = "Imagen 1"
     txt2.innerHTML = "Lorem ipsum";
 }
 
 function cambio2 (){
-    img.setAttribute("src","img2.jpg")
+    img.setAttribute("src","modulo2.jpg")
     txt1.innerHTML = "Imagen 2"
     txt2.innerHTML = "Sed egestas";
 }
 
 function cambio3 (){
-    img.setAttribute("src","img3.jpg")
+    img.setAttribute("src","modulo3.jpg")
     txt1.innerHTML = "Imagen 3"
     txt2.innerHTML = "Sed egestas";
 }

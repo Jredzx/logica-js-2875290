@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Fortis</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/Logo.svg" alt="Logo de la página">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Módulos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Mi perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="diagrama">
+        <img src="./images/_Diagrama de flujo.png" alt="Diagrama de flujo">
+    </section>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img class="cover" src="./images/P1.jpg" alt="Portada Cuadro 1">
+            <img class="main-img" src="./images/Homepage.jpg" alt="Cuadro 1" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/ingresar1.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/Ingresar.jpg" alt="Cuadro 2" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+        </div>
+
+        <div class="gallery-item">
+            <img class="cover" src="./images/nosotros1.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/Nosotros.jpg" alt="Cuadro 2" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/registrarse.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/Registro.jpg" alt="Cuadro 2" style="display: none;">
+            
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/P2.jpg" alt="Portada Cuadro 1">
+            <img class="main-img" src="./images/modulo1.jpg" alt="Cuadro 1" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/P3.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/modulo2.jpg" alt="Cuadro 2" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/P4.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/modulo3.jpg" alt="Cuadro 2" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/P5.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/modulo4.jpg" alt="Cuadro 2" style="display: none;">
+            
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/P6.jpg" alt="Portada Cuadro 1">
+            <img class="main-img" src="./images/modulo5.jpg" alt="Cuadro 1" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="gallery-item">
+            <img class="cover" src="./images/P7.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/modulo6.jpg" alt="Cuadro 2" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+        </div>
+
+        <div class="gallery-item">
+            <img class="cover" src="./images/formulario1.jpg" alt="Portada Cuadro 2">
+            <img class="main-img" src="./images/Formulario.jpg" alt="Cuadro 2" style="display: none;">
+            <input type="file" class="file-input" accept="image/*">
+        </div>
+        <!-- Repetir para los demás cuadros -->
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="app.js"></script>
+    <footer class="foote">
+        <div class="foot">
+          <a class="logo-fo" href="">
+            <img class="img-logo" src="images/Logo_Fortis.png"/>
+          </a>
+              <div class="redes">
+                  <a href="https://www.youtube.com/" target="_blank" class="Yout">
+                    <i class="fa-brands fa-youtube"></i>   
+                  </a>
+                  <a href="https://www.tiktok.com/login?lang" target="_blank" class="Tik">
+                    <i class="fa-brands fa-tiktok"></i>  
+                  </a>
+                  <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="Whats">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="Ins">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a> 
+                  <a href="https://x.com/?lang=es" target="_blank" class="Ins">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>     
+              </div>       
+        </div>
+      </footer>
+</body>
+</html>
